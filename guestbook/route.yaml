@@ -1,7 +1,7 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: guestbook
+  name: guestbook-ui
   namespace: guestbook
 spec:
   host: ''
