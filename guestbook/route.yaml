@@ -1,0 +1,17 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: guestbook
+  namespace: guestbook
+spec:
+  host: ''
+  to:
+    kind: Service
+    name: guestbook-ui
+    weight: 100
+  port:
+    targetPort: 80
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: None
+  wildcardPolicy: None
