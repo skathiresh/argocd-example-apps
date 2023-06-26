@@ -4,7 +4,6 @@ metadata:
   name: guestbook-ui
   namespace: guestbook
 spec:
-  host: ''
   to:
     kind: Service
     name: guestbook-ui
